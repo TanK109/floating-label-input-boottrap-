@@ -1,0 +1,116 @@
+/* 
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+} */
+.form-floating {
+  position: relative;
+}
+/* *, ::after, ::before {
+  box-sizing: border-box;
+} */
+/* :focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+} */
+/* .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+} */
+/* .form-floating>.form-control {
+  padding: 1rem 0.75rem;
+} */
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: calc(3.5rem + 2px);
+  /* line-height: 0px; */
+}
+.form-control:focus {
+  /* color: #212529; */
+  /* background-color: #fff; */
+  /* border-color: rgb(255, 255, 255); */
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #3573cf;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 17px 15px;
+  padding-top: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  /* color: #212529; */
+  /* background-color: #fff; */
+  /* background-clip: padding-box; */
+  border: 1px solid #ced4da;
+  /* -webkit-appearance: none; */
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+} */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.65;
+  color: #3573cf;
+  transform: scale(0.75) translateY(-0.75rem) translateX(0.25rem);
+}
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1.2rem 1rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.25s ease-in-out;
+}
+/* label {
+  display: inline-block;
+} */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+/* :focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+} */
+/* label {
+  cursor: pointer;
+} */
+::-webkit-input-placeholder {
+  opacity: 0;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
